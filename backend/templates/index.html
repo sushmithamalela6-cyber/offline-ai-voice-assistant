@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Voice Assistant</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <h1>
+             SuperChat Voice Assistant <br>
+        </h1>
+
+        <div class="voice-box">
+
+            <p id="status">
+                Tell me how can i help you ?
+            </p>
+
+            <div class="voice-controls">
+
+                <button id="micButton">
+                    <i class="fas fa-microphone"></i>
+                </button>
+
+                <div class="wave">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <button class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                <button onclick="stopAssistant()" class="stop-btn">
+                    Stop
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="chat-box" id="chatBox"></div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='javascript.js') }}"></script>
+
+</body>
+
+</html>

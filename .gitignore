@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.wav
+venv/
+.env
+.vscode/
+
+backend/vosk-model-en-us-0.22/
