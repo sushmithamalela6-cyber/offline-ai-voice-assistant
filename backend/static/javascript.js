@@ -58,7 +58,7 @@ micButton.addEventListener("click", async () => {
 
     micButton.disabled = true;
 
-    statusText.innerText = "🎤 Listening...";
+    statusText.innerText = "🎙️ Listening...";
     wave.classList.add("active");
 
     try {
@@ -72,7 +72,7 @@ micButton.addEventListener("click", async () => {
         // User Message
         if (data.user && data.user !== "No voice detected") {
 
-            addMessage("🎤 " + data.user, "user");
+            addMessage("🎙️ " + data.user, "user");
         }
 
         // Thinking Message
